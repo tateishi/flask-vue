@@ -52,5 +52,13 @@ def app_5():
     return render_template('app-5.html',
                            title=title)
 
+
+@app.route('/comp-1')
+def comp_1():
+    title = 'component 1'
+    return render_template('comp-1.html',
+                           title=title)
+
+
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=PORT, debug=True)
