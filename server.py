@@ -52,6 +52,27 @@ def app_5():
     return render_template('app-5.html',
                            title=title)
 
+@app.route('/app-6')
+def app_6():
+    title = 'app-6'
+    msg = 'Change me.'
+    return render_template('app-6.html',
+                           title=title,
+                           msg=msg)
+
+@app.route('/app-7')
+def app_7():
+    title = 'app-7'
+    return render_template('app-7.html',
+                           title=title)
+
+
+@app.route('/app-8')
+def app_8():
+    title = 'app-8'
+    return render_template('app-8.html',
+                           title=title)
+
 
 @app.route('/comp-1')
 def comp_1():
